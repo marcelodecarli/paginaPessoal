@@ -1,0 +1,121 @@
+html {
+    --background-header: rgb(160, 158, 175);
+    --color-header: rgb(39, 36, 38);
+    --background-footer: rgb(160, 158, 175);
+    --color-footer: rgb(24, 15, 156);
+    --background-main: rgb(160, 158, 175);
+    --color-main: #0f0f0e;
+}
+  
+  html[data-theme="dark"] {
+    --background-header: #000000;
+    --color-header: rgb(12, 80, 65);
+    --background-footer: #121212;
+    --color-footer: #ff9900;
+    --background-main: #121212;
+    --color-main: rgb(83, 85, 179);
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+  }
+  header {
+    height: 100px;
+    background-color: var(--background-header);
+    color: var(--color-header);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  
+  main {
+    padding: 20px 50px;
+    background-color: var(--background-main);
+    color: var(--color-main)
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    height: 80px;
+    background-color: var(--background-footer);
+    color: var(--color-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  h2{
+    font-style: italic;
+    text-align: center;
+    font-family: comic sans-serif;  
+  }
+  img{
+    width: 32%;
+    position:absolute;
+    top: 90%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .switch__container {
+    margin: 1000px right;
+    width: 1000px right;
+  }
+  
+  .switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+  }
+  
+  .switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+  
+  .switch--shadow + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50px;
+  }
+  .switch--shadow + label:before,
+  .switch--shadow + label:after {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    content: "";
+  }
+  .switch--shadow + label:before {
+    right: 1px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: all 1s;
+  }
+  .switch--shadow + label:after {
+    width: 25px;
+    background-color: #0432507a;
+    border-radius: 60%;
+    box-shadow: 0 10px 20px rgba(10, 9, 9, 0.938);
+    transition: all 0.4s;
+  }
+  .switch--shadow:checked + label:before {
+    background-color: #0f110f;
+  }
+  .switch--shadow:checked + label:after {
+    transform: translateX(31px);
+  }
