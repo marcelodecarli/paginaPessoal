@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil pessoal</title>
-    <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
-    <script>
-      const changeThemeToDark = () => {
-          document.documentElement.setAttribute("data-theme", "dark");
-          localStorage.setItem("data-theme", "dark");
-      }
-  
-      const changeThemeToLight = () => {
-          document.documentElement.setAttribute("data-theme", "light");
-          localStorage.setItem("data-theme", 'light');
-      }
-      let theme = localStorage.getItem('data-theme');
-      if (theme == 'dark') changeThemeToDark();
-    </script>
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil pessoal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+  <script>
+    const changeThemeToDark = () => {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("data-theme", "dark");
+    }
+
+    const changeThemeToLight = () => {
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("data-theme", 'light');
+    }
+    let theme = localStorage.getItem('data-theme');
+    if (theme == 'dark') changeThemeToDark();
+  </script>
+
+</head>
 
 
 <body>
@@ -33,81 +34,83 @@
       <input id="toggle-dark" class="switch switch--shadow" type="checkbox">
       <label for="toggle-dark"></label>
     </div>
-    
-    
+
+
 
   </header>
 
-    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#anchor">História</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contatos
-                </a>
-                <ul class="dropdown-menu">
-                  
-                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/marcelo-de-carli-rocha-6714a2b1/" target="_blank">Linkedin</a></li>
-                  <li><a class="dropdown-item" href="https://wa.me/5551991874029" target="_blank">Whatsapp</a></li>
+  <img src="Marcelo.jpg">
+  <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./inicio.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./historia.html">História</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contatos
+            </a>
+            <ul class="dropdown-menu">
+
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/marcelo-de-carli-rocha-6714a2b1/"
+                  target="_blank">Linkedin</a></li>
+              <li><a class="dropdown-item" href="https://wa.me/5551991874029" target="_blank">Whatsapp</a></li>
 
 
-                </ul>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Repositório
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="https://github.com/marcelodecarli" target= "_blank">Github</a></li>
-                  <li><a class="dropdown-item" href="https://codeberg.org/marcelodecarlirocha" target="_blank">Codeberg</a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://www.canva.com/design/DAFiYOkNzjs/KcC7bdfOCTqUI2ia6kn9yg/view?utm_content=DAFiYOkNzjs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">Currículo</a>
-              </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-warning" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-<main>
-  
-  <div id="anchor">
-    <h1>Está é uma história que começou quando eu tinha 13 anos!</h1>
-    <h2>
-     Prazer, sou o Marcelo e tenho 32 anos!
-    </h2>
-    <p>
-      Após 17 anos recomecei um sonho, que era o de saber como funcionava um site! 
-      Na época (e até hoje) me fascino com o que pode ser feito e o que ocorre por "trás" de um site e ou sistemas em geral!
-      São anos trabalhando em diversas profissões, adquiri experiências e aprendi muitas coisas.
-      Trabalhei muitos anos no comércio e tive a oportunidade de passar por diversos trabalhos!
-      Sempre busquei fazer o meu melhor. No ano de 2021 foi um ano que mudou o meu pensamento e descidi correr atrás de realizar esse sonho e desejo de adolescente!
-      Foi o ano de 2021 que me vi em uma UTI, na época com COVID19, tive que ser entubado e renasci 7 dias depois!
-      Após esse ocorrido busquei o mais rápido possível e dei início no curso de Análise e Desenvolvimento de sistemas"
-      Atualmente faço cursos paralelos a faculdade e iniciei um curso de Inglês, para aperfeiçoar e me capacitar!      
-    </p>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Repositório
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://github.com/marcelodecarli" target="_blank">Github</a></li>
+              <li><a class="dropdown-item" href="https://codeberg.org/marcelodecarlirocha" target="_blank">Codeberg</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+              href="https://www.canva.com/design/DAFiYOkNzjs/KcC7bdfOCTqUI2ia6kn9yg/view?utm_content=DAFiYOkNzjs&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              target="_blank">Currículo em inglês</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+                href="https://www.canva.com/design/DAFnJHo2_4U/JdFMa6UYvzrNYGNVJ5-yPQ/view?utm_content=DAFnJHo2_4U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+                target="_blank">Currículo em português</a>
+        </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <main>
+
+    <div id="anchor">
 
 
-  </div>
+    </div>
 
 
 
 
-</main>
-      <footer>
-        &copy; 2023 - Marcelo de Carli Rocha
-      </footer>
+  </main>
+  <footer>
+    &copy; 2023 - Marcelo de Carli Rocha
+  </footer>
 
 </body>
+
 </html>

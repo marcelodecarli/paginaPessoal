@@ -1,19 +1,23 @@
 html {
-    --background-header: rgb(160, 158, 175);
-    --color-header: rgb(39, 36, 38);
-    --background-footer: rgb(160, 158, 175);
-    --color-footer: rgb(24, 15, 156);
-    --background-main: rgb(160, 158, 175);
-    --color-main: #0f0f0e;
+    --background-header: rgb(71, 93, 121);
+    --color-header: rgb(0, 0, 0);
+    --background-footer: rgb(71, 93, 121);
+    --color-footer: rgb(0, 0, 0);
+    --background-main: rgb(71, 93, 121);
+    --color-main: #000000;
+    --background-container-fluid: rgb(71, 93, 121);
+    --color-container-fluid: rgb(0, 0, 0);
 }
   
   html[data-theme="dark"] {
     --background-header: #000000;
-    --color-header: rgb(12, 80, 65);
-    --background-footer: #121212;
+    --color-header: #ff9900;
+    --background-footer: #000000;
     --color-footer: #ff9900;
-    --background-main: #121212;
-    --color-main: rgb(83, 85, 179);
+    --background-main: #000000;
+    --color-main: #ff9900;
+    --background-container-fluid: #534545;
+    --color-container-fluid: #ff9900;
 }
   
   * {
@@ -35,7 +39,7 @@ html {
   main {
     padding: 20px 50px;
     background-color: var(--background-main);
-    color: var(--color-main)
+    color: var(--color-main);
   }
   
   p {
@@ -52,10 +56,16 @@ html {
     justify-content: center;
   }
  
+  h1{
+    font-style: normal;
+    text-align: center;
+    font-family: Verdana; 
+    color:rgb(224, 3, 3);
+  }
   h2{
     font-style: italic;
     text-align: center;
-    font-family: comic sans-serif;  
+    font-family: Verdana;  
   }
   img{
     width: 32%;
@@ -91,7 +101,6 @@ html {
     background-color: #ffffff;
     border-radius: 50px;
   }
-  .switch--shadow + label:before,
   .switch--shadow + label:after {
     display: block;
     position: absolute;
@@ -102,15 +111,17 @@ html {
   }
   .switch--shadow + label:before {
     right: 1px;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.938);
+
     transition: all 1s;
   }
   .switch--shadow + label:after {
     width: 25px;
-    background-color: #0432507a;
+    background-color: #05273d86;
     border-radius: 60%;
-    box-shadow: 0 10px 20px rgba(10, 9, 9, 0.938);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.938);
     transition: all 0.4s;
   }
   .switch--shadow:checked + label:before {
@@ -118,4 +129,9 @@ html {
   }
   .switch--shadow:checked + label:after {
     transform: translateX(31px);
+  }
+
+  .container-fluid {
+    background-color: var(--background-container-fluid);
+    color: var(--color-container-fluid);
   }
